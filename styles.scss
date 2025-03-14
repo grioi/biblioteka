@@ -1,0 +1,154 @@
+$bg-color: rgba(10, 25, 47, 1);
+$header-bg: rgba(5, 20, 40, 1);
+$link-bg: rgba(30, 60, 100, 0.8);
+$link-bg-hover: rgba(50, 90, 150, 1);
+$section-bg: rgba(255, 255, 255, 0.9);
+$item-bg: rgba(230, 230, 230, 0.95);
+$button-bg: rgba(30, 60, 100, 1);
+$button-bg-hover: rgba(50, 90, 150, 1);
+$delete-bg: rgba(200, 0, 0, 1);
+$delete-bg-hover: rgba(255, 50, 50, 1);
+
+body {
+  font-family: Arial, sans-serif;
+  background: $bg-color;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+header {
+  background: $header-bg;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 15px 0;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          padding: 10px 15px;
+          border-radius: 8px;
+          background: $link-bg;
+          transition: background 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            background: $link-bg-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .search-container {
+    text-align: center;
+    margin-top: 10px;
+
+    #search-input {
+      width: 90%;
+      max-width: 400px;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  }
+}
+
+.section {
+  display: none;
+  padding: 20px;
+
+  &.active {
+    display: block;
+  }
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: $section-bg;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 15px auto;
+  padding: 12px;
+  background: $button-bg;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+
+  &:hover {
+    background: $button-bg-hover;
+    transform: scale(1.05);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+
+  li {
+    background: $item-bg;
+    padding: 12px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+    button {
+      background: $delete-bg;
+      padding: 8px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      transition: background 0.3s, transform 0.2s;
+
+      &:hover {
+        background: $delete-bg-hover;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.card-number {
+  font-weight: bold;
+  color: $button-bg;
+  margin-right: 10px;
+}

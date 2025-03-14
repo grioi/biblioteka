@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бібліотека</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Облік книг</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="menu-link" data-section="books">Книги</a></li>
+        <li><a href="#" class="menu-link" data-section="visitors">Відвідувачі</a></li>
+        <li><a href="#" class="menu-link" data-section="cards">Картки</a></li>
+        <li><a href="#" class="menu-link" data-section="stats">Статистика</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Пошук...">
+    </div>
+  </header>
+  <main>
+    <section id="books" class="section active">
+      <h2>Книги</h2>
+      <button id="add-book">Додати книгу</button>
+      <ul id="book-list"></ul>
+    </section>
+    <section id="visitors" class="section">
+      <h2>Відвідувачі</h2>
+      <button id="add-visitor">Додати відвідувача</button>
+      <ul id="visitor-list"></ul>
+    </section>
+    <section id="cards" class="section">
+      <h2>Картки</h2>
+      <button id="add-card">Створити картку</button>
+      <ul id="card-list"></ul>
+    </section>
+    <section id="stats" class="section">
+      <h2>Статистика</h2>
+      <div id="stats-content"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

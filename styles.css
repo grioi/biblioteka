@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(10, 25, 47, 1);
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  header {
+    background: rgba(5, 20, 40, 1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  header nav ul li {
+    margin: 0 15px;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(30, 60, 100, 0.8);
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  header nav ul li a:hover {
+    background: rgba(50, 90, 150, 1);
+  }
+  header .search-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  header .search-container #search-input {
+    width: 90%;
+    max-width: 400px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .section {
+    display: none;
+    padding: 20px;
+  }
+  .section.active {
+    display: block;
+  }
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+  }
+  h2 {
+    text-align: center;
+    color: black;
+    font-size: 22px;
+  }
+  button {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 15px auto;
+    padding: 12px;
+    background: rgba(30, 60, 100, 1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  button:hover {
+    background: rgba(50, 90, 150, 1);
+    transform: scale(1.05);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  ul li {
+    background: rgba(230, 230, 230, 0.95);
+    padding: 12px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  ul li button {
+    background: rgba(200, 0, 0, 1);
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    transition: background 0.3s, transform 0.2s;
+  }
+  ul li button:hover {
+    background: rgba(255, 50, 50, 1);
+    transform: scale(1.1);
+  }
+  .card-number {
+    font-weight: bold;
+    color: rgba(30, 60, 100, 1);
+    margin-right: 10px;
+  }
+  
